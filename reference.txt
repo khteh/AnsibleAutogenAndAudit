@@ -1,0 +1,17 @@
+Optim.Net
+├── .gitignore
+├── ansible.cfg
+├── group_vars
+│   └── all
+│       ├── all.yml
+│       └── all_vault.yml
+├── localhost.yml
+├── playbooks
+│   ├── gitpull.yml
+│   └── roles -> ../roles
+└── roles
+    └── git
+        ├── tasks
+        │   └── main.yml
+        └── vars
+            └── main.yml
