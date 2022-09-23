@@ -11,6 +11,7 @@ from email.mime.multipart import MIMEMultipart
 from os.path import basename
 parser = argparse.ArgumentParser(description='Audit ansible project structure and content')
 parser.add_argument('path', nargs='+', help='Path to ansible project to perform audit')
+parser.add_argument('--verbose', '-v', action='count', default=0)
 args = parser.parse_args()
 space =  '    '
 branch = '|   '
